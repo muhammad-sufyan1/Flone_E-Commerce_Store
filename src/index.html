@@ -1,138 +1,119 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flone | E-Commerce Store</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
     <link href="./output.css" rel="stylesheet" />
     <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
+        body {
+            font-family: "Poppins", sans-serif;
+        }
     </style>
-  </head>
-  <body class="bg-gray-100">
-    <header
-      class="fixed top-0 left-0 right-0 p-7 bg-white shadow-md z-10 flex items-center justify-between flex-wrap"
-    >
-      <!-- Logo -->
-      <div class="flex-shrink-0">
-        <img src="/assets/flone-logo.png" alt="Logo" class="h-8" />
-      </div>
+</head>
+<body class="bg-gray-100">
+    <header class="fixed top-0 left-0 right-0 p-5 md:p-7 bg-white shadow-md z-10 flex items-center justify-between flex-wrap">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+            <img src="/assets/flone-logo.png" alt="Logo" class="h-8" />
+        </div>
 
-      <!-- Navigation Links -->
-      <nav class="flex space-x-6 flex-wrap items-center mt-2">
-        <a href="#" class="text-gray-800 hover:text-gray-600">Demos</a>
-        <a href="#" class="text-gray-800 hover:text-gray-600">Features</a>
-        <a href="#" class="text-gray-800 hover:text-gray-600">Support</a>
-      </nav>
+        <!-- Navigation Links -->
+        <nav class="flex space-x-4 md:space-x-6 flex-wrap items-center mt-2">
+            <a href="#" class="text-gray-800 hover:text-gray-600">Demos</a>
+            <a href="#" class="text-gray-800 hover:text-gray-600">Features</a>
+            <a href="#" class="text-gray-800 hover:text-gray-600">Support</a>
+        </nav>
 
-      <!-- Purchase Button -->
-      <div>
-        <a
-        href="#" class="bg-white text-black px-5 py-4 rounded-md shadow-lg hover:bg-gray-100 transition-colors">
-          Purchase
-        </a>
-      </div>
+        <!-- Purchase Button -->
+        <div>
+            <a href="#" class="bg-white text-black px-4 py-2 md:px-5 md:py-4 rounded-md shadow-lg hover:bg-gray-100 transition-colors">
+                Purchase
+            </a>
+        </div>
     </header>
 
     <!-- Vertical Button Container -->
-<div class="fixed right-0 top-1/2 transform -translate-y-1/2 flex flex-col space-y-2 p-2">
-    <!-- Support Center Button -->
-    <a href="#" class="relative flex items-center justify-center bg-white text-black p-3 rounded-lg shadow-lg hover:bg-blue-700 transition-colors group">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16m-7 8h7"></path>
-        </svg>
-        <span class="absolute left-12 opacity-0 text-black group-hover:opacity-100 transition-opacity"></span>
-    </a>
-    <!-- Purchase Flone Button -->
-    <a href="#" class="relative flex items-center justify-center bg-white text-black p-3 rounded-lg shadow-lg hover:bg-green-700 transition-colors group">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l3 8h11l3-8h-6"></path>
-            <circle cx="8" cy="21" r="2" fill="currentColor"></circle>
-            <circle cx="16" cy="21" r="2" fill="currentColor"></circle>
-        </svg>
-        <span class="absolute left-12 opacity-0 text-white group-hover:opacity-100 transition-opacity"></span>
-    </a>
-</div>
+    <div class="fixed right-0 top-1/2 transform -translate-y-1/2 flex flex-col space-y-2 p-2">
+        <!-- Support Center Button -->
+        <a href="#" class="relative flex items-center justify-center bg-white text-black p-3 rounded-lg shadow-lg hover:bg-blue-700 transition-colors group">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16m-7 8h7"></path>
+            </svg>
+            <span class="absolute left-12 opacity-0 text-black group-hover:opacity-100 transition-opacity">Support</span>
+        </a>
+        <!-- Purchase Flone Button -->
+        <a href="#" class="relative flex items-center justify-center bg-white text-black p-3 rounded-lg shadow-lg hover:bg-green-700 transition-colors group">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l3 8h11l3-8h-6"></path>
+                <circle cx="8" cy="21" r="2" fill="currentColor"></circle>
+                <circle cx="16" cy="21" r="2" fill="currentColor"></circle>
+            </svg>
+            <span class="absolute left-12 opacity-0 text-white group-hover:opacity-100 transition-opacity">Purchase</span>
+        </a>
+    </div>
 
+    <!-- Hero Section -->
+    <section class="flex flex-col md:flex-row items-center justify-start min-h-screen p-6 md:p-12 bg-gray-200">
+        <!-- Hero Content -->
+        <div class="max-w-2xl md:max-w-3xl text-center md:text-left mt-16">
+            <h1 class="text-2xl md:text-6xl font-bold text-gray-800 mb-4 mt-16">
+                Flone - Minimal <br />
+                React Templates
+            </h1>
+            <p class="text-base md:text-lg text-gray-600">
+                A versatile react ecommerce template for different purposes that <br />
+                emphasize creativity, efficiency, and diversity.
+            </p>
+        </div>
+    </section>
 
-<!-- Hero Section -->
-<section class="flex flex-col md:flex-row items-center justify-start min-h-screen p-6 md:p-12 bg-gray-200">
-  <!-- Hero Content -->
-  <div class="max-w-2xl md:max-w-3xl text-center md:text-left">
-      <!-- Heading -->
-      <h1 class="text-6xl md:text-6xl font-bold text-gray-800 mb-4">
-          Flone - Minimal <br> React Templates
-      </h1>
-      <!-- Paragraph -->
-      <p class="text-base md:text-lg text-gray-600">
-          A versatile react ecommerce template for different purposes that <br> emphasize creativity, efficiency, and diversity.
-      </p>
-  </div>
-</section>
-<!-- Section with Horizontal Line of Flex Boxes -->
-<section class="p-6">
-  <div class="flex space-x-6">
-      <!-- Box 1 -->
-      <div class="flex-1 flex flex-col items-start text-center p-6">
-          <h3 class="text-xl font-bold mb-10">Latest React & Redux</h3>
-          <p class="text-gray-600">Latest React and Redux used.</p>
-      </div>
-      
-      <!-- Box 2 -->
-      <div class="flex-1 flex flex-col items-start text-start p-6">
-          <h3 class="text-xl font-bold mb-2">Mega Menu</h3>
-          <p class="text-gray-600">Mega Menu is the door that has the entrance to every pages of your site. It navigates things for bringing ease.</p>
-      </div>
-      <!-- Vertical Dotted Line -->
-      <div class="hidden md:block border-l border-dotted border-gray-300 h-full"></div>
-      <!-- Box 3 -->
-      <div class="flex-1 flex flex-col items-start text-start p-6">
-          <h3 class="text-xl font-bold mb-2">Responsive Design</h3>
-          <p class="text-gray-600">Flone is super responsive & work perfectly in all devices.</p>
-      </div>
-      <!-- Vertical Dotted Line -->
-      <div class="hidden md:block border-l border-dotted border-gray-300 h-full"></div>
-      <!-- Box 4 -->
-      <div class="flex-1 flex flex-col items-start text-start p-6">
-          <h3 class="text-xl font-bold mb-2">Real Support</h3>
-          <p class="text-gray-600">We provide 7 days a week one by one real support.</p>
-      </div>
-  </div>
-</section>
+    <!-- Section with Horizontal Line of Flex Boxes -->
+    <section class="p-6">
+        <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
+            <!-- Box 1 -->
+            <div class="flex-1 flex flex-col items-start text-center p-6">
+                <h3 class="text-xl font-bold mb-2">Latest React & Redux</h3>
+                <p class="text-gray-600">Latest React and Redux used.</p>
+            </div>
 
+            <!-- Box 2 -->
+            <div class="flex-1 flex flex-col items-start text-center p-6">
+                <h3 class="text-xl font-bold mb-2">Mega Menu</h3>
+                <p class="text-gray-600">Mega Menu is the door that has the entrance to every page of your site. It navigates things for bringing ease.</p>
+            </div>
+            <!-- Vertical Dotted Line -->
+            <div class="hidden md:block border-l border-dotted border-gray-300 h-full"></div>
+            <!-- Box 3 -->
+            <div class="flex-1 flex flex-col items-start text-center p-6">
+                <h3 class="text-xl font-bold mb-2">Responsive Design</h3>
+                <p class="text-gray-600">Flone is super responsive & works perfectly on all devices.</p>
+            </div>
+            <!-- Vertical Dotted Line -->
+            <div class="hidden md:block border-l border-dotted border-gray-300 h-full"></div>
+            <!-- Box 4 -->
+            <div class="flex-1 flex flex-col items-start text-center p-6">
+                <h3 class="text-xl font-bold mb-2">Real Support</h3>
+                <p class="text-gray-600">We provide 7 days a week one-on-one real support.</p>
+            </div>
+        </div>
+    </section>
 
-<!-- Section with Horizontal Image Boxes -->
-<section class="p-6 bg-gray-100">
-  <div class="flex space-x-6">
-      <!-- Image Box 1 -->
-      <a href="/pages/Home1.html" target="_blank" class="flex flex-col items-center text-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-          <img src="/assets/fashion-home-1.png" alt="Image 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
-          
-          <p class="text-gray-600">Fashion Home 1</p>
-      </a>
-      <!-- Image Box 2 -->
-      <a href="/pages/Home2.html" target="_blank" class="flex flex-col items-center text-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-          <img src="/assets/fashion-home-2.png" alt="Image 2" class="w-full h-48 object-cover rounded-t-lg mb-4">
-          <p class="text-gray-600">Fashion Home 1</p>
-      </a>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-  </body>
+    <!-- Section with Horizontal Image Boxes -->
+    <section class="p-6 bg-gray-100">
+        <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
+            <!-- Image Box 1 -->
+            <a href="/pages/Home1.html" target="_blank" class="flex flex-col items-center text-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                <img src="/assets/fashion-home-1.png" alt="Image 1" class="w-full h-48 object-cover rounded-t-lg mb-4" />
+                <p class="text-gray-600">Fashion Home 1</p>
+            </a>
+            <!-- Image Box 2 -->
+            <a href="/pages/Home2.html" target="_blank" class="flex flex-col items-center text-center p-4 bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                <img src="/assets/fashion-home-2.png" alt="Image 2" class="w-full h-48 object-cover rounded-t-lg mb-4" />
+                <p class="text-gray-600">Fashion Home 2</p>
+            </a>
+        </div>
+    </section>
+</body>
 </html>
